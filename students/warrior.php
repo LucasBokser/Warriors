@@ -6,7 +6,8 @@ require_once __DIR__ . "/../base/localWarrior.php";
 $GLOBALS['warriorID'] = 'Lucartman';
 
 // Définissez vos class de combattants
-abstract class Warrior extends LocalWarrior {
+abstract class Warrior extends LocalWarrior
+{
     public $id;
     public $name;
     public $speed;
@@ -14,44 +15,62 @@ abstract class Warrior extends LocalWarrior {
     public $shield;
     public $imageUrl;
     public $weapon;
+
     public function __construct($id)
     {
-        $this->id=$id;
-        $this->speed=30;
-        $this->life=100;
-        $this->shield=20;
+        $this->id = $id;
+        $this->speed = 30;
+        $this->life = 100;
+        $this->shield = 20;
     }
-};
+}
 
-class StartrekWarrior extends Warrior {
-public $mentalPower;
-    public function __construct()
+;
+
+class StartrekWarrior extends Warrior
+{
+    public $mentalPower;
+
+    public function __construct($id)
     {
-
+        parent::__construct($id);
+        $this->mentalPower=8;
     }
-    public function power() {
+
+    public function power()
+    {
         return $this->mentalPower;
     }
 }
 
-class MarvelWarrior extends Warrior{
-public $superPower;
-    public function __construct()
-    {
+class MarvelWarrior extends Warrior
+{
+    public $superPower;
 
+    public function __construct($id)
+    {
+        parent::__construct($id);
+        $this->superPower=100;
     }
-    public function power() {
+
+    public function power()
+    {
         return $this->superPower;
     }
 }
 
-class PokemonWarrior extends Warrior{
-public $level;
-    public function __construct()
-    {
+class PokemonWarrior extends Warrior
+{
+    public $level;
 
+    public function __construct($id)
+    {
+        parent::__construct($id);
+        $this->level=1;
     }
-    public function power() {
+
+    public function power()
+    {
         return $this->level;
     }
 }
