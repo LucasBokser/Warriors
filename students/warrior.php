@@ -9,15 +9,15 @@ $GLOBALS['warriorID'] = 'Lucartman';
 abstract class Warrior extends LocalWarrior {
 };
 
-class StartrekWarrior{
+class StartrekWarrior extends Warrior {
 
 }
 
-class MarvelWarrior{
+class MarvelWarrior extends Warrior{
 
 }
 
-class PokemonWarrior{
+class PokemonWarrior extends Warrior{
 
 }
 
