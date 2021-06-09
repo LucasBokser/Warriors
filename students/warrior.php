@@ -14,10 +14,18 @@ abstract class Warrior extends LocalWarrior {
     public $shield;
     public $imageUrl;
     public $weapon;
+    public function __construct()
+    {
+
+    }
 };
 
 class StartrekWarrior extends Warrior {
 public $mentalPower;
+    public function __construct()
+    {
+
+    }
     public function power() {
         return $this->mentalPower;
     }
@@ -25,6 +33,10 @@ public $mentalPower;
 
 class MarvelWarrior extends Warrior{
 public $superPower;
+    public function __construct()
+    {
+
+    }
     public function power() {
         return $this->superPower;
     }
@@ -32,6 +44,10 @@ public $superPower;
 
 class PokemonWarrior extends Warrior{
 public $level;
+    public function __construct()
+    {
+
+    }
     public function power() {
         return $this->level;
     }
