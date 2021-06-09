@@ -16,7 +16,7 @@
       }
       public static function createOtherWarrior()
       {
-          $thirdWarrior = new MarvelWarrior('thor');
+          $thirdWarrior = new MarvelWarrior('Thor');
           $Axe = new Weapon("Axe", 520);
           $Axe->setImageUrl("https://i.pinimg.com/originals/16/48/be/1648be7134ffbe1a75cbcaf22f79e79b.jpg");
           $thirdWarrior->setWeapon($Axe);
@@ -24,14 +24,14 @@
           $thirdWarrior->saveNew();
 
 
-                    $forthWarrior=  new MarvelWarrior('risitas');
+                    $forthWarrior=  new MarvelWarrior('Risitas');
                     $Issou = new Weapon("Axe", 200002);
                     $Issou->SetImageUrl("https://pbs.twimg.com/profile_images/1114772105286049798/HeRzpvpG.jpg");
                     $forthWarrior-> setWeapon($Issou);
                     $forthWarrior->SetImageUrl("https://risibank.fr/cache/stickers/d549/54995-full.png");
                     $forthWarrior->saveNew();
 
-          $fiftWarrior=  new PokemonWarrior('combo');
+          $fiftWarrior=  new PokemonWarrior('Ken');
           $Chancla = new Weapon("Axe", 200002);
           $Chancla->SetImageUrl("https://pbs.twimg.com/profile_images/1114772105286049798/HeRzpvpG.jpg");
           $fiftWarrior-> setWeapon($Chancla);
