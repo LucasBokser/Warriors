@@ -9,7 +9,12 @@
       <td width="33%">
         <img src="{{ $battleField->getMyWarrior()->imageUrl }}" alt="{{ get_class ($battleField->getMyWarrior()) }}" style="width:300px;">
         <img src="{{ $battleField->getMyWarrior()->weapon->imageUrl }}" alt="Pan !" style="width:100px;">
+
+          <p>{{$battleField->getMyWarrior()->shield}} : puissance du bouclier </p>
+          <p>{{$battleField->getMyWarrior()->speed}} : vitesse d'attaque </p>
+          <p>{{$battleField->getMyWarrior()->life}} : vie de mon guerrier </p>
         <progress class="nes-progress is-primary mt-3" value="{{ $battleField->getMyWarrior()->life }}" max="100"></progress>
+
       </td>
 
       @if($battleField->getOtherWarriors() != NULL)
@@ -23,6 +28,10 @@
                     <img src="{{ $warrior->imageUrl }}" alt="{{ get_class ($warrior) }}" style="width:100px">
                   </a>
                   <img src="{{ $warrior->weapon->imageUrl }}" alt="Pan !" style="width:30px;">
+                    <p>{{ $warrior->shield}} : puissance du bouclier </p>
+                    <p>{{ $warrior->speed}} : vitesse d'attaque </p>
+                    <p>{{ $warrior->life}} : vie de mon guerrier </p>
+
                 <progress class="nes-progress is-primary mt-3" value="{{ $warrior->life }}" max="100"></progress>
                 </td>
               </tr>
