@@ -14,9 +14,12 @@ abstract class Warrior extends LocalWarrior {
     public $shield;
     public $imageUrl;
     public $weapon;
-    public function __construct()
+    public function __construct($id)
     {
-
+        $this->id=$id;
+        $this->speed=30;
+        $this->life=100;
+        $this->shield=20;
     }
 };
 
