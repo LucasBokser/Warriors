@@ -16,12 +16,13 @@
           $secondWarrior->saveNew();
       }
       public static function createOtherWarrior() {
-          $thirdWarrior=  new MarvelWarrior('thor');
-          $Axe = new Weapon("Axe", 200);
-          $Axe->SetImageUrl("https://i.pinimg.com/originals/16/48/be/1648be7134ffbe1a75cbcaf22f79e79b.jpg");
-          $thirdWarrior-> setWeapon($Axe);
-          $thirdWarrior->SetImageUrl("https://scontent-cdt1-1.xx.fbcdn.net/v/t1.6435-9/68751007_10220160748113553_2128055745688633344_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=174925&_nc_ohc=sKKMGlyihZoAX8Cb1tB&_nc_ht=scontent-cdt1-1.xx&oh=9b348ce5522a175bb1c43a0b7c6bdd4c&oe=60E6102A");
-          $thirdWarrior->power();
-          $thirdWarrior->saveNew();
+          $forthWarrior=  new MarvelWarrior('risitas');
+          $Chancla = new Weapon("Axe", 200002);
+          $Chancla->SetImageUrl("https://pbs.twimg.com/profile_images/1114772105286049798/HeRzpvpG.jpg");
+          $forthWarrior-> setWeapon($Chancla);
+          $forthWarrior->SetImageUrl("https://risibank.fr/cache/stickers/d549/54995-full.png");
+          $forthWarrior->power();
+          $forthWarrior->saveNew();
       }
+     
   }
