@@ -17,15 +17,15 @@ abstract class Warrior extends LocalWarrior {
 };
 
 class StartrekWarrior extends Warrior {
-
+public $mentalPower;
 }
 
 class MarvelWarrior extends Warrior{
-
+public $superPower;
 }
 
 class PokemonWarrior extends Warrior{
-
+public $level;
 }
 
 
