@@ -23,6 +23,7 @@ abstract class Warrior extends LocalWarrior
         $this->life = 100;
         $this->shield = 20;
     }
+
 }
 
 ;
@@ -74,5 +75,7 @@ class PokemonWarrior extends Warrior
         return $this->level;
     }
 }
+class Weapon {
 
+};
 
