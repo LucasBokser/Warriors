@@ -18,14 +18,23 @@ abstract class Warrior extends LocalWarrior {
 
 class StartrekWarrior extends Warrior {
 public $mentalPower;
+    public function power() {
+        return $this->mentalPower;
+    }
 }
 
 class MarvelWarrior extends Warrior{
 public $superPower;
+    public function power() {
+        return $this->superPower;
+    }
 }
 
 class PokemonWarrior extends Warrior{
 public $level;
+    public function power() {
+        return $this->level;
+    }
 }
 
 
