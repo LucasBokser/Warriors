@@ -23,7 +23,9 @@ abstract class Warrior extends LocalWarrior
         $this->life = 100;
         $this->shield = 20;
     }
-
+    public function setWeapon(Weapon $Weapon) {
+        $this->weapon= $Weapon;
+    }
 }
 
 ;
