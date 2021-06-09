@@ -26,6 +26,9 @@ abstract class Warrior extends LocalWarrior
     public function setWeapon(Weapon $Weapon) {
         $this->weapon= $Weapon;
     }
+    public function SetImageUrl($url) {
+        $this->imageUrl=$url;
+    }
 }
 
 ;
@@ -85,6 +88,9 @@ class Weapon {
     public function __construct($id, $strength) {
         $this->id=$id;
         $this->strength=$strength;
+    }
+    public function SetImageUrl($url) {
+        $this->imageUrl=$url;
     }
 };
 
