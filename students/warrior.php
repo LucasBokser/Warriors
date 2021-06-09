@@ -78,6 +78,8 @@ class PokemonWarrior extends Warrior
     }
 }
 class Weapon {
-
+    public $id;
+    public $strength;
+    public $imageUrl;
 };
 
